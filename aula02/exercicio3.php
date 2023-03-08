@@ -3,15 +3,28 @@
 
     if($salario <=1500){
         $novosalario = $salario * 1.15;
-        echo "Novo salario " .$novosalario;
     }
     else if ($salario >1500 && $salario <=3000){
         $novosalario = $salario * 1.1;
-        echo "Novo salario " .$novosalario;
     }
     else if ($salario >3000){
         $novosalario = $salario * 1.05;
-        echo "Novo salario " .$novosalario;
     }
 
     ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aumento Salario</title>
+</head>
+<body>
+    <?php
+     echo "Novo Salario <b>" .number_format($novosalario, 2, ',', '.'). "</i></b>";
+
+        ?>
+</body>
+</html>
